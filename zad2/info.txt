@@ -1,0 +1,59 @@
+mamy zadane pewna funkcje w jakims przedziale ktora majac dane wezly
+dla roznego zestawu wezlow przeprowadzic ten wielomian interpolujacy
+majac dane wezly przeprowadzamy wielomian
+wyznaczanie na bazie funkcji
+liczba wezlow ktora mamy analizowac (to co podane to sugestia)
+ze wzgledu na to ze musimy poczynic obserwacje poleca wlasne tworczosc wlasne spostrzezenia i dobor wezlow
+do wykorzystania mamy wzor lagrange i newtona
+mamy ocenic dokladnos intepolacji zwerifikowac w jakis sposob rozne miedzy funkcjami inter i normalna
+
+wybrac w przedziale a i b zestaw rowno rozmieszczonychp punktow np. 1000
+i liczymy w 1000 pkt roznice miedzy ufnkcja interpolowana a wielomianem interpolujacym
+wylapujemy gdzie jest na 1000 maksimum roznicy 
+
+bierzemy roznice w 1000 punktow mozemey podzielic przez liczbe pkt
+
+co mmay zauwazyc
+
+ze w zakrecie podstawowych n: od 3 do 20 zasadniczo nie ma roznicy pomiedzy liczeniem wielomianu pomiedzy lagrangem a newtonem
+
+dobrze by bylo zrobic analize zwiekszajac liczbe wezlow aby zobaczyc w ktorym momencie wzory sie rozjada dla rozjada sie dla jakiegos wielkego stopnia wielomianu w ktoryms momencie zacznie szwankowac arytmetyka
+
+normalnie takich stopni wyskoich sie nie stostue ale wartos zbadac
+
+efekt rungegra
+przy rownomienrym rozlozeniu wezlow ( wylapac w ktorym momencoe przy rownomienrym zacznie sie rozjezdzac) moze pojawic sie osylacja na koncach wielomianu efekt rungego
+zniwelowac w sposob: inaczej rozmiesic wezly interpolacji wg czebyszewa
+
+zwrocic uwage ze standrowe wzory na czebyszewa od -1 do 1
+
+i pojawia sie nie na koncach ale w pewnym oddaleniu od konca przedzialow, symetryczne wg srodka przedzialu
+
+sa bardziej gesto na koncach mniej na srokdu
+
+powoduje ze efektu nie ma ale roznica przy rownomiernym jest git przyblizenie w srodku
+
+jak czebyszew to nie ma efektu rungego, ale gorsze przyblizenie w srodku
+
+:
+
+1. zaimplemnorwac oba wzoru w ktorym momecnie sie roznia i dlaczego
+2. 2 rodzaje rozmieszczenie wezlow
+3. wykonac rysunki ktore beda robione w ten sposob
+liczymy blad w 1000 pkt wyznaczmy wartosci w tych 1000 punktow
+na 1 rysnunku funkcje narysowana innym kolorem a interopolowana innym i zaznaczyc wezly
+
+na kolejny raz opracowanie
+
+co wzor lagrange daje to samo co newton to piszemy tylko ze tak bylo i piszemy kiedy sie rozjechalo
+
+umiesic tabelki z bledami
+
+odpowidie rysunki kiedy widzimy efekt rungego i jaki blad 
+
+
+lagrange przeprowadzi wielomian przez weszly, zgodnosc funkcji w wezlach
+
+hermit: dla pierwsze ochodnej tylko, zgodnosc wartosci w wezlach i do tego zgosnosc pierwszej pochodnej, ten sam wspolczynnik kierunkowej stycznej w wezlach interpolacji
+
+czy korzystamy ze wzoru lagrange czy hermita
