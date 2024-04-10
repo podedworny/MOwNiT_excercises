@@ -57,3 +57,29 @@ lagrange przeprowadzi wielomian przez weszly, zgodnosc funkcji w wezlach
 hermit: dla pierwsze ochodnej tylko, zgodnosc wartosci w wezlach i do tego zgosnosc pierwszej pochodnej, ten sam wspolczynnik kierunkowej stycznej w wezlach interpolacji
 
 czy korzystamy ze wzoru lagrange czy hermita
+
+
+def linear_spline(x_data, y_data):
+    n = len(x_data)
+    coefficients = []
+
+    for i in range(n - 1):
+        x0, y0 = x_data[i], y_data[i]
+        x1, y1 = x_data[i + 1], y_data[i + 1]
+        a = (y1 - y0) / (x1 - x0)
+        b = y0 - a * x0
+        coefficients.append((a, b))
+
+    def piecewise_linear(x):
+        results = np.empty_like(x, dtype=float)
+        for i in range(n - 1):
+            mask = (x_data[i] <= x) & (x < x_data[i + 1])
+            results[mask] = coefficients[i][0] * x[mask] + coefficients[i][1]
+        results[(x < x_data[0]) | (x >= x_data[-1])] = np.nan
+        return results
+
+    return piecewise_linear
+
+pr = generate_chebyshev(a,b,g,10)
+
+fun_painter(a,b,[linear_spline(*pr),g],["fun","g"], pr)
