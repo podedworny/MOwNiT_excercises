@@ -1,0 +1,62 @@
+układ ax=b zadana macierz a
+dla roznych rozmiarow układ bedzimey robc
+mamy przyjąć na początek jakies x, w postaci wektora jedynek - imnues jedynek wymnaajac przez acierz a dostajemy wektor b
+
+mamy x dane które 
+zapomnimay ze mamy x dane i roziwazyjemy ax=b z x nieznanym
+i będziemy patrzeć jak ta rzonica z x obliczone i x
+
+norma maksimum do porównania
+
+jeśli chodzi o układ z 1 punkty zadanie dla dwóch roznych prezycji 
+co się będzie dzialo
+w pierwszym zadaniu rozmiary układu - nieprzesadzac idziemy co 1 od 3 do 20 maks 25
+
+i co możemy zauwazyc, jeśli chodzi o pojedyncza prezycje ; zaczniemy obserwowoac przy 7,8 rozmiarze układu dziwne cos, potem rozpsywyac się zacznie
+
+podwojna precyzja kolo 13,14 rozmiaru układu, w wektorze zaczniemy obserwować dziwne efekty nie zdziwić się
+
+wynika z uwarnukowania układu
+musimy je policzyć
+
+wobec drugiego układu, drugi układ w drugim zadaniu, tu szalejemy, nie tylko na roziwazanie w zakresie w pierwszym zadaniu ale tez 100 200 300
+
+bledy arytmetkyki będą brozdzic ale nie az tak, policyzc możemy dla nawet dużego układu
+
+porownac uwarunkwanie 1 i 2 układu przy czym jak liczy się wskaźnik uwarnukowania dla takiego układu
+
+licyzmy wskaźnik uwrn norma a * norma a do -1
+
+problem a do -1, jeżeli układ zle uwarnkukowany to tez się zle liczy
+
+to tez będzie obarczone pewnym bledem
+
+niekonicznie liczyc wszakniz wuarnikawia ale policzyć z biblioteki
+
+liczone najprowadopobonie w ten sam sposób
+
+ale będziemy widzieć roznice pomiędzy wielkoscia, można zaobserwować jak duza jesr roznica miedzy wskanikem 
+
+3 zdanie będziemy robic next time, tam będzie potrzebne, odszukać algorytm rozwiazywania układu z macierza trojdiagonalna thomasa działa w oparciu o metode gaussa
+
+zaoptylizowany to trojdiagonalnych
+
+znalesc w necie
+
+dostaniemy indywidualne parametry, odszukać ten algorytm thomasa, zadanie mktore będzie:
+trzeci układ rozwiazac metoda gausaa i thomasa, oprócz tego aby okreslic czy przebiega wszystko dobrze, znalesc roznice pomiędzy x danym i obliczonym, do tego trzeba będzie jeszcze obliczyć czas
+
+w przyszłości zwracać uwagę również jaka metode dobieramy do rozwiazywania układ
+
+gauss -  n**3
+thomas - n
+
+pomuslec jak czas mierzyc
+
+ALE TYLKO ROZWIAZYWANIA UKLADOW
+
+na arz następny tylko do 1 i 2 tabelki, calosc po drugiej części
+
+jak wygląda x obliczone i x dane
+
+jak wygląda wskaźnik uwarnukowania od rozmiaru macierzy rozmiaru 
