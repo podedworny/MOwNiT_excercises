@@ -59,4 +59,28 @@ na arz następny tylko do 1 i 2 tabelki, calosc po drugiej części
 
 jak wygląda x obliczone i x dane
 
-jak wygląda wskaźnik uwarnukowania od rozmiaru macierzy rozmiaru 
+jak wygląda wskaźnik uwarnukowania od rozmiaru macierzy rozmiaru
+
+
+#####################################################
+INFO 2
+#####################################################
+
+zadanie w dwóch precyzjach przynajmniej w pojedynzej prezycji przy 7 rozmiare już jest kłopot
+przy podwojeń prezycji kolo 13 jest problem
+
+dla pierwszego nie powyżej 20 rozmiaru
+
+w durigch 50 100 150 200 rozmiarow
+
+uwarunkowanie układu, znalesc funckje ktroe licza uwarunkowanie macierzy A
+
+3 zadanie należy zaimplenetowac algorytm thomasa oprócz gaussa i dla wybranego układu policzyć rozwiązanie układu i zobaczyć na ile jest dokładne, powinno być porównywalne, dodatkowo trzeba policzyć
+porównanie czasów zlozonosc gaussa n883 thomasa jest liniowa, istotna roznica w rozwiazywaniu ukladow
+przyjmownaie wektora x, jak porownywanc gausa thomasa były te same wektory zadane
+jeżeli chodzi o czasu to pomijamy czas generowania układu, tylko czas rozwazywania układu jednego i drugiego
+
+dobrze wiedzieć i zdawać dpstawe s tego ze możemy zaoszczedzic na pamięci przy thomaise
+nieprzechowujemy całej macierzy A, tylko przechowujemy przekatna pod pzekatna i nad przekatna nie musi trzymać zbędnych zer
+
+jeżeli się nie uda to napisac ze na całej macierzy
